@@ -1,0 +1,25 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/debian
+{
+  "name": "My Test Dev Container",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "features": {
+    "ghcr.io/devcontainers/features/dotnet:2": {
+      "version": "8.0",
+      "additionalVersions": "7.0"
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "containerEnv": {},
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csdevkit",
+        "fernandoescolar.vscode-solution-explorer"
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "consumer": {
+    "name": "API-Consumer"
+  },
+  "interactions": [
+    {
+      "description": "a request",
+      "pending": false,
+      "request": {
+        "method": "GET",
+        "path": "/"
+      },
+      "response": {
+        "status": 200
+      },
+      "type": "Synchronous/HTTP"
+    }
+  ],
+  "metadata": {
+    "pactRust": {
+      "ffi": "0.4.16",
+      "models": "1.1.19"
+    },
+    "pactSpecification": {
+      "version": "4.0"
+    }
+  },
+  "provider": {
+    "name": "API-Provider"
+  }
+}
